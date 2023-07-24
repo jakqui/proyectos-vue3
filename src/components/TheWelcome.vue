@@ -15,7 +15,12 @@ import SupportIcon from './icons/IconSupport.vue'
     <template #heading>Proyectos</template>
 
     Vue’s
-    <router-link to="/practica1">Practica 1</router-link>
+    <div class="row">
+      <router-link to="/practica1">Practica 1</router-link>
+    </div>
+    <div class="row">
+      <router-link to="/components">Practica 2 Posts</router-link>
+    </div>
   </WelcomeItem>
   <WelcomeItem>
     <template #icon>
