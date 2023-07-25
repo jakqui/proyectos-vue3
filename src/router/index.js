@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  linkActiveClass: 'active',
+  //linkActiveClass: 'active',
   routes: [
     {
       path: '/',
@@ -41,7 +41,29 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/ComponentesView.vue')
-    }
+    },
+    {
+      path: '/pokemons',
+      name: 'pokemons',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Seccion5Router/PokemonsView.vue')
+    },
+    {
+      path: '/pokemons/:pokename',
+      name: 'pokemon',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Seccion5Router/PokeView.vue')
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      name: 'NotFound',
+      component: () => import('../views/Seccion5Router/NotFoundView.vue')
+    },
+    
   ]
 })
 

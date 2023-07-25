@@ -16,10 +16,13 @@ import SupportIcon from './icons/IconSupport.vue'
 
     Vue’s
     <div class="row">
-      <router-link to="/practica1">Practica 1</router-link>
+      <router-link to="/practica1" active-class="active">Practica 1</router-link>
     </div>
     <div class="row">
       <router-link to="/components">Practica 2 Posts</router-link>
+    </div>
+    <div class="row">
+      <router-link to="/pokemons">Pokemons</router-link>
     </div>
   </WelcomeItem>
   <WelcomeItem>
