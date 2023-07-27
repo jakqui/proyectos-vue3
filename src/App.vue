@@ -25,9 +25,11 @@ const enrrutar = (ruta) => {
         </q-toolbar>
 
         <q-tabs v-model="tab">
-          <q-tab name="home" label="Home" @click="enrrutar('/')"></q-tab>
+          <q-tab name="home" label="Home+Contador+Pinia" @click="enrrutar('/')"></q-tab>
+          <q-tab name="Contador 1" label="Contador" @click="enrrutar('/contador')"/>
           <q-tab name="component" label="Componentes" @click="enrrutar('/components')"/>
           <q-tab name="pokemons" label="Pokemons" @click="enrrutar('/pokemons')"/>
+          <q-tab name="favoritos" label="Favoritos" @click="enrrutar('/pokemons/favoritos')"/>
         </q-tabs>
       </q-header>
 

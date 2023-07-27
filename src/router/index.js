@@ -59,6 +59,14 @@ const router = createRouter({
       component: () => import('../views/Seccion5Router/PokeView.vue')
     },
     {
+      path: '/pokemons/favoritos',
+      name: 'favoritos',
+      // route level code-splitting
+      // this generates a separate chunk (About.[hash].js) for this route
+      // which is lazy-loaded when the route is visited.
+      component: () => import('../views/Seccion5Router/FavoritosView.vue')
+    },
+    {
       path: '/:pathMatch(.*)*',
       name: 'NotFound',
       component: () => import('../views/Seccion5Router/NotFoundView.vue')
